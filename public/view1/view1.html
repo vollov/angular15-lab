@@ -1,10 +1,8 @@
 <p>This is the partial for view 1.</p>
-<div ng-controller="employeeCtrl">
 
-AAA BBB
-    <my-comp info="Employees"></my-comp>
-</div>
 
 <div ng-controller="employeeCtrl">
-<ul></ul>
+	<ul ng-repeat="p in employees">
+		<li>{{ p.firstName }}</li>
+	</ul>
 </div>
