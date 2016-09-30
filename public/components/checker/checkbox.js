@@ -4,17 +4,17 @@ angular.module('myApp.checker.checkbox', [])
 
 .component('listComponent', {
 	bindings: {
-        message: '<'
+        info: '='
     },
 
     // Inline template which is binded to message variable
     // in the component controller
-    template:'<div>Hello {{$ctrl.message}}</div>',
+    template:'<div>Hello {{$ctrl.info}}</div>',
 
     // The controller that handles our component logic
-    controller: function () {
-        this.message = "Thomas component"
-    }
+    // controller: function () {
+    //     this.message = "Thomas component"
+    // }
 })
 .component('ourComponent', {
   // Binds the attibute data to the component controller.

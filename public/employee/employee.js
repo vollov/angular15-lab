@@ -1,10 +1,11 @@
 'use strict';
 
-angular.module('myApp.employee', ['ngRoute'])
+angular.module('myApp.employee', ['ui.router'])
 
-.config(['$routeProvider', function($routeProvider) {
-	$routeProvider.when('/employee', {
-		templateUrl: 'employee/list.html',
+.config(['$stateProvider', function($stateProvider) {
+  $stateProvider.state('employees', {
+  	url : '/employees',
+		templateUrl: '/views/employee/list.html',
 		controller: 'employeeCtrl',
 		resolve: {
 			//requireLogin: 'true',

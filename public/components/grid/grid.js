@@ -2,8 +2,8 @@
 
 angular.module('myApp.grid', [])
 .component('myComp', {
-    scope: {
-        info: '=info'
+    bindings: {
+        info: '='
     },
-    templateUrl : '/grid.html'
+    templateUrl : '/components/grid/grid.html'
 });
